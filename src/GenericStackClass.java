@@ -8,9 +8,7 @@ public class GenericStackClass {
 
     public static <T> void push(T element){
         linkedList.add(element);
-        String min = min();
-        String top = top();
-        System.out.println("Push " + element + " -> Top = " + top + ", min = " + min);
+        System.out.println("Push " + element + " -> Top = " + top() + ", min = " + min());
     }
     public static <T> String pop(){
         return "";
@@ -20,7 +18,7 @@ public class GenericStackClass {
     }
     public static <T> String min(){
         String temp = linkedList.get(0).toString(); //Assume first index is min
-        for (int i = 1; i < linkedList.size()-1; i++){
+        for (int i = 1; i < linkedList.size(); i++){
             if (temp.compareTo(linkedList.get(i).toString()) > 0){
                 temp = linkedList.get(i).toString();
             }
