@@ -9,9 +9,12 @@ public class main{
     public static GenericStackClass genStack = new GenericStackClass();
 
     public static void main(String[] args){
+        genStack.stackInfo();
         genStack.push(32);
         genStack.push(43);
         genStack.push(16);
-        genStack.push(10);
+        genStack.pop();
+        genStack.pop();
+        genStack.pop();
     }
 }
