@@ -2,6 +2,8 @@ import java.util.LinkedList;
 
 /**
  * Created by MichaelRajchert on 5/05/2017.
+ *
+ * Class for ST2-ASSIGNMENT1-Q1
  */
 public class GenericStackClass {
     public static LinkedList linkedList = new LinkedList();
